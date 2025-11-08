@@ -1,0 +1,30 @@
+import React from "react";
+
+function UserCard(props) {
+  return (
+    <div style={{ border: "1px solid #ccc", padding: "10px", margin: "10px" }} >
+        <h2>{props.name}</h2>
+        <p>Tuoi : {props.age}</p>
+        <p>Thành phố: {props.city}</p>
+        <button onClick={props.onGreet}>Xin chào</button>
+    </div>
+  );
+}
+export default UserCard;
+
+
+// src/UserCard.js
+// import React from 'react';
+
+// function UserCard(props) {
+//   return (
+//     <div style={{ border: '1px solid #ccc', padding: '10px', margin: '10px' }}>
+//       <h2>{props.name}</h2>
+//       <p>Tuổi: {props.age}</p>
+//       <p>Thành phố: {props.city}</p>
+//       <button onClick={props.onGreet}>Chào</button>
+//     </div>
+//   );
+// }
+
+// export default UserCard;
